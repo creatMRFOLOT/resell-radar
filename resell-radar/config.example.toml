@@ -1,0 +1,52 @@
+# resell-radar: настройки. Находки пишутся в data/results.xlsx.
+
+[monitor]
+check_every_min = 15
+block_pause_min = 30
+headless = true
+region = "rossiya"
+favorite = false   # true: ещё и кладёт находки в избранное на Avito (нужен вход: команда login)
+seller = "private"   # private (частные лица), company (магазины), any (все)
+profile_dir = "chrome_profile"
+data_dir = "data"
+
+[money]
+max_buy = 0   # максимальная цена закупки, ₽ (обязательно укажите свою)
+min_margin = 1000   # минимальная чистая прибыль с одной сделки, ₽
+commission_pct = 11.0
+sell_basis = "q1"   # q1 (нижняя четверть рынка, осторожно) или median
+sell_discount_pct = 0.0
+
+[condition]
+# Что умеешь чинить. Пусто = только целые телефоны.
+# Варианты: screen, back_glass, battery, board, water, locked
+repairable = []
+risk_max = 60
+min_group_size = 3
+market_window_days = 14
+
+[condition.repair_costs]
+screen = 0
+back_glass = 0
+battery = 0
+board = 0
+water = 0
+locked = 0
+
+[[items]]
+name = "Samsung Galaxy S22"
+query = "Samsung Galaxy S22"
+category = "telefony"
+match = "\\bs\\s?22\\b"
+brand = "samsung|galaxy|самсунг|галакси"
+exclude = "s\\s?22\\s?(\\+|plus|плюс|ultra|ультра|fe|edge)"
+min_price = 6000
+
+[[items]]
+name = "Samsung Galaxy S22+"
+query = "Samsung Galaxy S22+"
+category = "telefony"
+match = "\\bs\\s?22\\s?(\\+|plus|плюс)"
+brand = "samsung|galaxy|самсунг|галакси"
+exclude = "ultra|ультра"
+min_price = 6000

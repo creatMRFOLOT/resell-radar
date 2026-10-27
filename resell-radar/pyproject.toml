@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resell-radar"
+version = "0.1.0"
+description = "Поиск выгодных объявлений на Avito для перекупов: рынок по группам, оценка состояния и риска, уведомления в Telegram"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["beautifulsoup4", "playwright", "openpyxl"]
+
+[project.scripts]
+resell-radar = "resell_radar.cli:main"
+
+[tool.setuptools]
+packages = ["resell_radar"]
