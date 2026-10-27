@@ -131,5 +131,5 @@ MIT, см. файл `LICENSE`. Если вы форкаете проект, за
 
 ## Помощь автору
 sol 6HCNSM6ACKt6yDjGbiBxvNB6RqwW3zt74vVSGXD81neU
-btc bc1qm2rm5j5mx@tdwdpv885e8ms77ttycwtwgfpul9
+btc bc1qm2rm5j5mx@tdwdpv885e8ms77ttycwtwgfpul9 
 Trc20 TXuddDx9DfJfrsKB2q7Pd9NbBsBkwtXLxT
